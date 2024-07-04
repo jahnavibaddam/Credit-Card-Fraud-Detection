@@ -1,0 +1,42 @@
+This code demonstrates a credit card fraud detection system using logistic regression. The system is built to identify fraudulent transactions from a given dataset. Below is a step-by-step explanation of the code:
+
+Import Libraries:
+numpy for numerical operations.
+pandas for data manipulation.
+sklearn for machine learning and evaluation metrics.
+
+Load Dataset:
+The dataset is loaded into a Pandas DataFrame from a CSV file.
+
+Inspect Dataset:
+Display the first and last 5 rows of the dataset.
+Display dataset information including data types and non-null counts.
+Check for missing values in each column.
+Display the distribution of legitimate (Class = 0) and fraudulent (Class = 1) transactions.
+
+Separate Data:
+Separate legitimate transactions (legit) and fraudulent transactions (fraud).
+Display the shape of both subsets.
+
+Statistical Analysis:
+Display descriptive statistics for the Amount column in both legitimate and fraudulent transactions.
+Compare the mean values for both transaction types.
+
+Balance the Dataset:
+Create a sample of legitimate transactions to match the number of fraudulent transactions.
+Combine the sampled legitimate transactions and all fraudulent transactions into a new dataset.
+Display the first and last 5 rows of the new dataset.
+Check the distribution of transaction classes in the new dataset.
+Display the mean values for each class in the new dataset.
+
+Prepare Data for Training:
+Define feature variables X and target variable Y.
+Split the data into training and testing sets using an 80-20 split, with stratification based on the target variable.
+
+Train Logistic Regression Model:
+Initialize and train a logistic regression model using the training data.
+
+Evaluate Model:
+Predict and calculate the accuracy of the model on the training data.
+Predict and calculate the accuracy of the model on the test data.
+The output includes the accuracy of the model on both the training and test datasets, indicating the effectiveness of the logistic regression model in detecting fraudulent transactions.
